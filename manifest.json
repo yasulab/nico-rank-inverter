@@ -1,0 +1,23 @@
+{
+  "name": "Nico Rank Inverter",
+  "version": "1.1",
+  "description": "Invert the order in NicoNico Douga Ranking; you can see the ranking in order from 100 to 1, instead of from 1 to 100.",
+  "icons": {
+  	   "16": "icon16.png",
+           "48": "icon48.png",
+	   "128": "icon128.png"
+	   },
+  "content_scripts": [
+    {
+      "matches": [
+      	"http://www.nicovideo.jp/ranking/*"
+      ],
+      "js": [
+        "jquery-1.6.3.min.js",
+        "invert.js"
+      ]
+    }
+  ],
+  "permissions": [
+  ]
+}
